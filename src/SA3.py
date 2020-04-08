@@ -61,12 +61,15 @@ def executeclassification():
                 else:
                     sentence.probPositive = positiveVocabulary.loc[word, 1]
 
+                print(positiveVocabulary.loc[word, 0:1])
+
             if word in negativeVocabulary[0].tolist():
                 if sentence.probNegativ != 'NA':
                     sentence.probNegativ = sentence.probNegativ * negativeVocabulary.loc[word, 1]
                 else:
                     sentence.probNegativ = negativeVocabulary.loc[word, 1]
 
+                print(negativeVocabulary.loc[word, 0:1])
         sentence.setopinion()
 
 

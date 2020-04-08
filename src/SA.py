@@ -27,7 +27,7 @@ class Sentence:
     def setopinion(self):
         s = 0
         if self.numOfPositivWords or self.numOfNegativWords != 0:
-            s = self.numOfPositivWords/(self.numOfPositivWords + self.numOfNegativWords)
+            s = self.numOfPositivWords / (self.numOfPositivWords + self.numOfNegativWords)
 
             if s > 0.5:
                 self.opinion = 1
@@ -36,7 +36,7 @@ class Sentence:
 
 
 def preprocessdata(file, positiveVocabulary, negativeVocabulary):
-     # vlozeni pozitivnich slov do listu
+    # vlozeni pozitivnich slov do listu
     positiveTerms = []
     for line in positiveVocabulary:
         positiveTerms.append(line.strip())
@@ -81,13 +81,9 @@ def printresults():
         table.append(result)
 
     # vytvoreni samotne tabulky s vysledky analyzy
-    print(tabulate(table, headers=["ID","Number of positive words", "Number of negative words", "Opinion"]))
+    print(tabulate(table, headers=["ID", "Number of positive words", "Number of negative words", "Opinion"]))
 
 
 sentences, positiveTerms, negativeTerms = preprocessdata(file, positiveVocabulary, negativeVocabulary)
 executeclassification()
 printresults()
-
-
-
-
