@@ -4,9 +4,11 @@ from tabulate import tabulate
 file = open('C://Users/jarda/OneDrive - Vysoká škola ekonomická v Praze/2. semestr ZWT/4IZ470 - Dolování znalostí z '
             'webu/cvika/DU_AS/sentences.txt')
 
+# nacteni je nutne bez hlavicky, jen samotna slova
 positiveVocabulary = open('C://Users/jarda/OneDrive - Vysoká škola ekonomická v Praze/2. semestr ZWT/4IZ470 - '
                           'Dolování znalostí z webu/cvika/DU_AS/bing-positive-words.txt')
 
+# nacteni je nutne bez hlavicky, jen samotna slova
 negativeVocabulary = open('C://Users/jarda/OneDrive - Vysoká škola ekonomická v Praze/2. semestr ZWT/4IZ470 - '
                           'Dolování znalostí z webu/cvika/DU_AS/bing-negative-words.txt')
 
