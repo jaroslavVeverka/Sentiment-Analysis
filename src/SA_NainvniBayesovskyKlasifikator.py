@@ -5,13 +5,13 @@ import pandas as pd
 file = open('C://Users/jarda/OneDrive - Vysoká škola ekonomická v Praze/2. semestr ZWT/4IZ470 - Dolování znalostí z '
             'webu/cvika/DU_AS/sentences.txt')
 
-# nacteni je nutne bez hlavicky, jen samotna slova
+# nacteni je nutne bez hlavicky!!! --> jen samotna slova
 positiveVocabulary = pd.read_csv('C://Users/jarda/OneDrive - Vysoká škola ekonomická v Praze/2. semestr '
                                  'ZWT/4IZ470 - Dolování znalostí z webu/cvika/DU_AS/probDistPosSmoothing.csv',
                                  header=None)
 positiveVocabulary = positiveVocabulary.set_index(0, drop=False)
 
-# nacteni je nutne bez hlavicky, jen samotna slova
+# nacteni je nutne bez hlavicky!!! --> jen samotna slova
 negativeVocabulary = pd.read_csv('C://Users/jarda/OneDrive - Vysoká škola ekonomická v Praze/2. semestr '
                                  'ZWT/4IZ470 - Dolování znalostí z webu/cvika/DU_AS/probDistNegSmoothing.csv',
                                  header=None)
